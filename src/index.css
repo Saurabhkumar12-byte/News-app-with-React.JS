@@ -29,13 +29,15 @@ code {
   box-shadow: 2px 5px 14px 1px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 2px 5px 14px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 2px 5px 14px 1px rgba(0, 0, 0, 0.5);
-  position: sticky;
-  top: 0px;
-  height: 100%;
+  /* position: sticky;
+  top: 0px; */
+  /* height: 100%; */
   /* color: white; */
   background-color: #282c34;
 }
-
+/* .mt{
+  margin-top: 75px;
+} */
 .card {
   border: 0;
   transition: 0.8s all ease;

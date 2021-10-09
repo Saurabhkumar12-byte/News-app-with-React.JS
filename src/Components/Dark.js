@@ -16,7 +16,7 @@ export class Dark extends Component {
   render() {
     return (
       <div className="container mt-4 mb-0 p-0">
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between mt align-items-center">
           <h2 className="ms-4 ms-md-5 ps-md-3 " id="fontWhite">
             News spy
           </h2>

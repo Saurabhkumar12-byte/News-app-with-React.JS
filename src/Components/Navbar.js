@@ -8,7 +8,7 @@ export class Navbar extends Component {
     return (
       
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark text-white navbar-sha " >
+        <nav className="navbar  navbar-expand-lg navbar-dark  text-white navbar-sha " >
           <div className="container-fluid">
             <Link className="navbar-brand" to="/home">
              News-Spy

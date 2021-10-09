@@ -81,8 +81,11 @@ export class News extends Component {
   // };
 
   async updateNews() {
-    const url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=22a5022795d640a48d727ad3ce005fdf&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    // const url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=22a5022795d640a48d727ad3ce005fdf&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    // const url=`https://newsdata.io/api/1/sources?apikey=pub_16281c7a7f01b99b009cbdbfa8c260982b03&language=fr&page=3`;
+    const url=`https://saurav.tech/NewsAPI/top-headlines/category/${this.props.category}/in.json`
     this.setState({ loading: true });
+    
     let data = await fetch(url);
     let parseData = await data.json();
     console.log(parseData);
@@ -138,7 +141,7 @@ export class News extends Component {
               );
             })}
         </div>
-        <div className="container d-flex justify-content-between px-lg-5 mx-lg-3">
+        {/* <div className="container d-flex justify-content-between px-lg-5 mx-lg-3">
           <button
             className="btn btn-dark"
             disabled={this.state.page <= 1}
@@ -156,7 +159,7 @@ export class News extends Component {
           >
             Next &raquo;
           </button>
-        </div>
+        </div> */}
       </div>
     );
   }
